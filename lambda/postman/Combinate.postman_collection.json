@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "cca17e01-6b69-4674-ba71-3906121ea83a",
+		"name": "Combinate",
+		"description": "This is the sample postman testing for the Technical Exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32229705"
+	},
+	"item": [
+		{
+			"name": "listProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://49w223owx0.execute-api.ap-southeast-1.amazonaws.com/dev/products",
+					"protocol": "https",
+					"host": [
+						"49w223owx0",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://49w223owx0.execute-api.ap-southeast-1.amazonaws.com/dev/products/ASD123",
+					"protocol": "https",
+					"host": [
+						"49w223owx0",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"products",
+						"ASD123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Id\": \"123456\",\r\n            \"name\": \"Sample Product\",\r\n            \"description\": \"A sample product description\",\r\n            \"colour\": \"blue\",\r\n            \"price_cents\": 999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://49w223owx0.execute-api.ap-southeast-1.amazonaws.com/dev/products",
+					"protocol": "https",
+					"host": [
+						"49w223owx0",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
